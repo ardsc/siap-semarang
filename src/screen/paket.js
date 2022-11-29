@@ -32,6 +32,9 @@ class PaketScreen extends Component {
           last: data.last,
         });
       },
+      error: () => {
+        this.setState({loading: false});
+      },
     });
   }
 

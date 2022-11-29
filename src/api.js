@@ -134,7 +134,7 @@ const freePost = params => {
       ? params.success
       : () => {},
     error_calback = params.hasOwnProperty('error') ? params.error : () => {};
-  console.log(url, data);
+
   return axios
     .post(url, data, {
       headers: {
